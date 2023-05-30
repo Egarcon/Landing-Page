@@ -1,0 +1,10 @@
+label {
+    color: white;
+    font-size: x-large;
+}
+.signup-form {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
