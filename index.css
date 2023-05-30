@@ -26,7 +26,7 @@ header {
     padding-left: 10px;
     margin-top: 0;
     font-size: larger;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .header,
@@ -39,7 +39,7 @@ footer {
 
 .header {
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-shrink: 1;
 }
 .links {
@@ -81,10 +81,16 @@ h2 {
     flex-shrink: 1;
 }
 .signup  p {
-    font-size: 18px;
+    font-size: 14px;
     color: #F9FAF8;
     margin-top: 5px;
 }
+
+.random-info,
+.photo p {
+    font-size: 12px;
+}
+
 .signup-definition {
     display: flex;
     flex-direction: column;
@@ -109,11 +115,12 @@ h2 {
 .action {
     background: #3882F6;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 85%;
+    flex-direction: column;
+    padding: 10px;
+    width: 75%;
+    height: 200px;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 20px;
     flex-wrap: wrap;
     flex-shrink: 1;
 }
@@ -121,45 +128,71 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .info {
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 5px;
     flex-wrap: wrap;
     flex-shrink: 1;
 }
 .card {
-    width: 250px;
+    width: 23%;
     height: auto;
     border: #e5e7cc 2px solid;
+    padding: 2px;
+        
 }
 .quote {
     background: #E5E7EB;
-    font-size: 26px;
+    font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    margin-top: 20px;
-    padding: 100px;
+    margin-top: 50px;
+    width: 700px;
+    height: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;    
+    align-self: center;
+    
 }
-.action button {
+.quote>div {
+    font-size: 20px;
+    text-align: justify;
+}
+.action>button {
     background: #3882F6;
-    color: #F9FAF8;
+    color: #faf9f8;
     border: #000 solid;
-    align-self: last baseline;
     margin-bottom: 10px;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     border-radius: 5px;
     font-size: large;
+    align-self: flex-end;
+  
+
+    
+}
+.quote>p {
+    font-size: 10px;
+    text-align: right;
+   
+    
 }
 footer {
     color: #E5E7EB;
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 40px;
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-radius: 5px;
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 10px;
     
 }
 div {
@@ -171,8 +204,13 @@ button:hover {
 ul > li> a:hover {
     color: #3882F6;
     border: solid #F9FAF8;
-    padding: 5px;
+    padding-left: 0;
     border-radius: 5px;
     background: #E5E7EB;
     font-weight: 800;
 }
+ul {
+    
+    padding-left: 0; 
+}
+.action
